@@ -56,19 +56,17 @@ Or install the VS Code **Live Server** extension and click **Go Live**.
 ```
 az-pdf-toolkit/
 │
-├── index.html          ← Single-page app shell; loads libraries + main.js
+├── index.html          ← Single-page app shell; loads libraries + scripts
 ├── style.css           ← All styles with CSS variables for dark/light mode
-│
-├── js/
-│   ├── main.js         ← Entry point: tabs, dark mode, event wiring
-│   ├── uploader.js     ← File picker, drag-and-drop, file list (Merge tab)
-│   ├── merger.js       ← Merges PDFs using pdf-lib
-│   ├── editor.js       ← Deletes & rotates pages using pdf-lib
-│   ├── extractor.js    ← Extracts page ranges using pdf-lib
-│   ├── thumbnails.js   ← Renders page previews using pdf.js
-│   └── utils.js        ← Shared helpers: download, error, toast, range parser
-│
-└── README.md
+├── utils.js            ← Shared helpers: download, error, toast, range parser
+├── thumbnails.js       ← Renders page previews using pdf.js
+├── uploader.js         ← File picker, drag-and-drop, file list (Merge tab)
+├── merger.js           ← Merges PDFs using pdf-lib
+├── editor.js           ← Deletes & rotates pages using pdf-lib
+├── extractor.js        ← Extracts page ranges using pdf-lib
+├── main.js             ← Entry point: tabs, dark mode, event wiring
+├── PRD.md              ← Product requirements document
+└── README.md           ← Documentation
 ```
 
 ---
